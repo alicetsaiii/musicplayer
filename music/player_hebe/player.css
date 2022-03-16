@@ -1,0 +1,145 @@
+.music{
+    position: relative;
+    width: 1000px;
+    height: 750px;
+    margin: 0 auto;
+}
+/*音樂標題 */
+.title {
+    font-weight: 500;
+    font-size: 24px;
+    color: #719a9e;
+    text-align:center;
+    padding-left: 150px;
+    padding-bottom: 20px;
+} 
+/* 播放器 */
+.player {
+    position:absolute;
+    left: 180px;
+    top: 150px;
+    z-index: 500;
+    width: 650px;
+    min-height: 100px;
+    background:#E5CEDC;
+    border: 2px solid #fff;
+    border-bottom: none;
+    border-radius: 40px 40px 0 0;
+    padding: 20px 30px;
+}
+/* 圖片的容器 */
+.player .player-img{
+    position: absolute;
+    top:35px;
+    width: 125px;
+    height: 125px;
+    background-color: orange;
+}
+.player .player-img img{
+    width: 100%;
+    height: 100%;
+}
+/* 播放按鈕背景 */
+.btns {
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    width: 100%;
+}
+/* 播放按鈕 */
+.btns div {
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: #777;
+    cursor: pointer;
+    box-shadow: inset 0 -5px 5px rgba(0,0,0,0.1),
+                      0 5px 10px rgba(0,0,0,0.1);
+    margin: 0 30px;
+}
+.btns div:active,
+.btns div.active
+ {
+    color: #719a9e;
+    box-shadow: inset 0 -2px 5px rgba(0,0,0,0.15),
+                inset 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.btns .playPause {
+    height: 100px;
+    width: 100px;
+
+}
+.btns .material-icons {
+    font-size: 2em;
+
+}
+.btns .playPause span {
+    font-size: 3em;
+} 
+
+/* 音樂列表 */
+.music-list{
+    position: absolute;
+    left: 180px;
+    top:340px;
+    width: 650px;
+    background-color: rgba(243,234,244,.8);
+    border-radius: 0 0 40px 40px;
+}
+/* 列表1 */
+.music-list .music-list-1{
+    height: 80px;
+    border-top: 1px solid darkgray;
+}
+.music-list .music-list-1 h2{
+float: left;
+color: #719a9e;
+font-size: 2em;
+font-weight: bolder;
+margin-left: 90px;
+margin-top: 20px;
+}
+.music-list .music-list-1 p{
+    color: gray;
+    margin-left: 280px;
+}
+/* 點擊歌名會變色 */
+.music-list .music-list-1 p:nth-of-type(1):active{
+    color: #cddcdc; 
+}
+
+.music-list .music-list-1 p:nth-of-type(1){
+    margin-top: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    /* background-color: green; */
+    width: 200px;
+}
+.music-list .music-list-1 p:nth-of-type(2){
+    font-size: 12px;
+    margin-top: -10px;
+} 
+.music-list .music-list-1 i{
+    float: right;
+    color: gray;
+    margin-right: 80px;
+    margin-top: -60px;
+}
+.music-list .music-list-item{
+    list-style-type:none;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+.music-list .music-list-item li{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+

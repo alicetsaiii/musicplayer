@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../nav.css">
+    <link rel="stylesheet" href="player.css">
+</head>
+
+<body>
+    <!-- 頂部導航 -->
+    <div class="nav-wrapper">
+        <div class="nav">
+            <!-- logo -->
+            <h1 class="logo">
+                <a href="../music.html"></a>
+            </h1>
+            <!-- nav文字 -->
+            <ul class="nav-word">
+                <li><a href="../music.html">首頁</a></li>
+                <li><a href="../music.html">熱門歌手</a></li>
+                <li class="line"></li>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                <li><a href="#"><i class="fas fa-user"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="music">
+        <!-- 播放器 -->
+        <div class="player">
+            <h2 class="title">Music Name</h2>
+            <div class="player-img">
+                <img src="../img/taeyeon.jpeg" alt="">
+            </div>
+            <audio src=""></audio>
+            <div class="btns">
+                <div class="prev">
+                    <span class="material-icons">
+                        skip_previous
+                    </span>
+                </div>
+                <div class="playPause">
+                    <span class="material-icons">
+                        play_arrow
+                    </span>
+                </div>
+                <div class="next">
+                    <span class="material-icons">
+                        skip_next
+                    </span>
+
+                </div>
+            </div>
+        </div> 
+        <!-- 音樂列表 -->
+        <div class="music-list">
+            <ul class="music-list-item">
+                <li>編號</li>
+                <li>歌曲/專輯</li>
+                <li>時間</li>
+            </ul>
+            <div class="music-list-1" >
+                <h2>1</h2>
+                <p>I</p>
+                <p>I - The 1st Mini Album - EP</p>
+                <i>03:26</i>
+            </div>
+            <div class="music-list-1">
+                <h2>2</h2>
+                <p>11:11</p>
+                <p>11:11 Single</p>
+                <i>03:40</i>
+            </div>
+            <div class="music-list-1">
+                <h2>3</h2>
+                <p>Rain</p>
+                <p>TAEYEON 'Rain' - Single</p>
+                <i>03:39</i>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="player.js"></script>
+</body>
+
+</html>

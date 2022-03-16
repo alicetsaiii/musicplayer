@@ -1,0 +1,12 @@
+.carousel{
+    padding-top: 50px;
+    position: absolute;
+    left: 100px;
+   }
+   
+.carousel-inner .carousel-item img{
+        margin-left: 105px;
+    }
+.carousel .carousel-control-prev{
+    margin-left: 100px;
+}

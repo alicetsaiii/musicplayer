@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iMusic</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="carosel.css">
+    <link rel="stylesheet" href="card.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .music-wrapper {
+            position: relative;
+            margin: 0 auto;
+            width: 1519.2px;
+            height: 1480px;
+        }
+
+        .hot-singer-wrapper {
+            position: absolute;
+            left: 690px;
+            top: 510px;
+        }
+
+        #hot-singer {
+            font-size: 24px;
+            color: darkolivegreen;
+        }
+
+        .footer-wrapper {
+            position: absolute;
+            top: 1480px;
+            height: 80px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .modal-header,
+        h4,
+        .close {
+            background-color: #719a9e;
+            color: white;
+            text-align: center;
+            font-size: 1.5em;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- 頂部導航 -->
+    <div class="nav-wrapper">
+        <div class="nav">
+            <!-- logo -->
+            <h1 class="logo">
+                <a href="#"></a>
+            </h1>
+            <!-- nav文字 -->
+            <ul class="nav-word">
+                <li><a href="#">首頁</a></li>
+                <li><a href="#hot-singer">熱門歌手</a></li>
+                <li class="line"></li>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                <li><a id="userlogin" href="#"><i class="fas fa-user"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="music-wrapper">
+        <!-- 輪播圖 -->
+        <div class="carousel ">
+            <div class="container">
+
+                <div id="playList" data-interval="2500" class="carousel slide carousel-fade " data-ride="carousel">
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <!-- 輪播項目，編號: 零 -->
+                            <div>
+                                <img src="../music/img/iu (1).jpg" alt="">
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <!-- 輪播項目，編號: 壹 -->
+                            <div>
+                                <img src="../music/img/1231001.jpg" alt="">
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <!-- 輪播項目，編號: 貳 -->
+                            <div>
+                                <img src="../music/img/周杰倫MOJITO封面.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!-- 輪播項目，編號: 三 -->
+                            <div>
+                                <img src="../music/img/gem.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#playList" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#playList" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+                <!-- end if carousel (#playList) -->
+
+
+            </div>
+            <!-- end of container -->
+        </div>
+        <!-- 熱門歌手標籤 -->
+        <div class="hot-singer-wrapper">
+            <h1 id="hot-singer">🔥熱門歌手</h1>
+        </div>
+        <!-- 歌手卡片 -->
+        <div class="container-2">
+            <div class="row">
+
+                <div class="col">
+                    <div class="outer">
+                        <div class="img-wrapper">
+                            <a href="player_IU/player.html"><img src="./img/iu.png" alt="iu"></a>
+                        </div>
+                        <div class="info">
+                            <a href="player_IU/player.html" class="title">IU</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="outer">
+                        <div class="img-wrapper">
+                            <a href="player_JAY/player.html"><img src="./img/JayChou.PNG" alt="jay"></a>
+                        </div>
+                        <div class="info">
+                            <a href="player_JAY/player.html" class="title">周杰倫</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="outer">
+                        <div class="img-wrapper">
+                            <a href="player_GEM/player.html"><img src="./img/gemdeng.jpg" alt="gem"></a>
+                        </div>
+                        <div class="info">
+                            <a href="player_GEM/player.html" class="title">鄧紫琪</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+
+                <div class="col">
+                    <div class="outer">
+                        <div class="img-wrapper">
+                            <a href="player_bp/player.html"><img src="./img/bp.jpg" alt="bp"></a>
+                        </div>
+                        <div class="info">
+                            <a href="player_bp/player.html" class="title">BLACKPINK</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="outer">
+                        <div class="img-wrapper">
+                            <a href="player_jolin/player.html"><img src="./img/jolin.jpg" alt="jolin"></a>
+                        </div>
+                        <div class="info">
+                            <a href="player_jolin/player.html" class="title">蔡依林</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="outer">
+                        <div class="img-wrapper">
+                            <a href="player_eso/player.html"><img src="./img/mj116.jpg" alt="eso"></a>
+                        </div>
+                        <div class="info">
+                            <a href="player_eso/player.html" class="title">瘦子Eso</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col">
+                    <div class="outer">
+                        <div class="img-wrapper">
+                            <a href="player_maroon5/player.html"><img src="./img/Maroon5.jpg" alt="maroon5"></a>
+                        </div>
+                        <div class="info">
+                            <a href="player_maroon5/player.html" class="title">Maroon5</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="outer">
+                        <div class="img-wrapper">
+                            <a href="player_jjlin/player.html"><img src="./img/jjlin.jpg" alt="jlin"></a>
+                        </div>
+                        <div class="info">
+                            <a href="player_jjlin/player.html" class="title">林俊傑</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="outer">
+                        <div class="img-wrapper">
+                            <a href="player_eric/player.html"><img src="./img/周興哲.jpg" alt="chou"></a>
+                        </div>
+                        <div class="info">
+                            <a href="player_eric/player.html" class="title">周興哲</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col">
+                    <div class="outer">
+                        <div class="img-wrapper">
+                            <a href="player_ty/player.html"><img src="./img/taeyeon.jpeg" alt="taeyeon"></a>
+                        </div>
+                        <div class="info">
+                            <a href="player_ty/player.html" class="title">太妍</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="outer">
+                        <div class="img-wrapper">
+                            <a href="player_hebe/player.html"><img src="./img/hebe.jpg" alt="hebe"></a>
+                        </div>
+                        <div class="info">
+                            <a href="player_hebe/player.html" class="title">田馥甄</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="outer">
+                        <div class="img-wrapper">
+                            <a href="player_leeronghao/player.html"><img src="./img/ronghoa.jpeg" alt="ronghoa"></a>
+                        </div>
+                        <div class="info">
+                            <a href="player_leeronghao/player.html" class="title">李榮浩</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer-wrapper">
+        <div class="footer"></div>
+    </div>
+
+    <!-- Modal-->
+    <div class="container">
+        <div class="modal fade" id="loginModal">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">登入</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <!-- Modal body -->
+
+
+                        <div class="form-group row">
+                            <label for="userNameTextBox" class="col-form-label col-3 text-right">
+                                <i class="fa fa-user"></i> 帳號:
+                            </label>
+                            <input type="text" class="col-8 form-control" name="userName" id="userNameTextBox"
+                                placeholder="輸入帳號或E-mail" />
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="userNameTextBox" class="col-form-label col-3 text-right">
+                                <i class="fa fa-lock"></i> 密碼:
+                            </label>
+                            <input type="password" class="col-8 form-control" name="password" id="passwordTextBox"
+                                placeholder="請在此輸入密碼" />
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-2">&nbsp;</div>
+                            <div class="form-check col-10">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" name="rememberMe" value="yes">
+                                    記住我(下次自動登入)
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group row">
+                            <div class="col-sm-2">&nbsp;</div>
+                            <div class="col-sm-10 pl-0">
+                                <button type="submit" name="loginOrCancel" value="login" id="loginButton"
+                                    class="btn btn-outline-info">
+                                    <i class="fa fa-check"></i>登入
+                                </button>
+                                <button type="submit" id="cancelButton" name="loginOrCancel" value="cancel"
+                                    class="btn btn-outline-secondary " data-dismiss="modal">
+                                    <i class="fa fa-remove"></i> 取消
+                                </button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $("#userlogin").click(function () {
+                $("#loginModal").modal({ backdrop: "static" });
+            })
+            $("#loginButton").click(function () {
+                $("#loginModal").modal("hide");
+            })
+        </script>
+
+
+</body>
+
+</html>

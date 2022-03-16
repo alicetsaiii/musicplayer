@@ -1,0 +1,64 @@
+
+ /* 設置背景 */
+ body {
+    font-family:"Microsoft Yahei","Hiragino Sans GB",sans-serif;
+    background-image: url(../Soft\ Grass.png);
+    background-repeat: repeat-x;
+}
+
+/* 設置超連結 */
+a {
+    text-decoration: none;
+}
+
+/* 設置導航的外框 */
+.nav-wrapper{
+    width: 100%;
+    position: fixed;
+    z-index: 200;
+    height: 80px;
+    background-color: rgba(255,255,255,0.3);
+   
+}
+/* 設製導航裡的排列 */
+.nav-wrapper .nav {
+    height: 80px;
+    width: 1519.2px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* 設置logo */
+.logo a{
+    display: block;
+    width: 132px;
+    height: 41px;
+    background-image: url(../Logo.png);
+    background-size: 132px 41px;
+} 
+/* 設製右邊文字 */
+.nav-wrapper .nav .nav-word{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+/* 設置分隔線 */
+.nav-wrapper .nav .nav-word .line{
+    width: 1px;
+    height: 20px;
+    margin-top: 3px;
+    background-color:#719a9e;
+}
+.nav .nav-word li a{
+    margin: 28px 17px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #719a9e;
+    cursor: pointer;
+}
+.nav-wrapper .nav .nav-word li a:hover{
+    color: #E5CEDC;
+    text-decoration: none;
+}
+
